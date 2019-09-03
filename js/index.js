@@ -5,6 +5,7 @@ navs.forEach(nav => {
     nav.addEventListener('click', (event) => {
         event.preventDefault(); 
         console.log(event)
+        event.stopPropagation();
     })
 
     nav.addEventListener('mouseenter', (e) => e.target.style.color = 'silver')
